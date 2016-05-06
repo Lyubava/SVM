@@ -89,9 +89,9 @@ class SGD(object):
         self.train_target = self.target[:self.n_train_samples]
         self.valid_batches_n = self.get_batches_number(self.n_valid_samples)
         self.valid_input = self.input[
-                           self.n_train_samples: self.n_total_samples]
+            self.n_train_samples: self.n_total_samples]
         self.valid_target = self.target[
-                            self.n_train_samples: self.n_total_samples]
+            self.n_train_samples: self.n_total_samples]
         assert self.train_input.shape == (
             self.n_train_samples, self.n_features)
         assert self.valid_input.shape == (

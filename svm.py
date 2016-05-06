@@ -66,4 +66,3 @@ class LinearSVM(BaseModel):
         :return: sum(dE/dy * dy/db)
         """
         return - sum(loss_grad)[0]
-

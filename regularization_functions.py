@@ -20,8 +20,8 @@ class IRegularization(Interface):
         """
         Calculates dR/db, where R(w, b) - regularization
         """
-        
-        
+
+
 class RegularizationRegistry(MappedObjectsRegistry):
     mapping = "regularization"
 
@@ -30,8 +30,8 @@ class RegularizationRegistry(MappedObjectsRegistry):
 class BaseRegularization(object):
     def __init__(self, lambda_coeff, **kwargs):
         self.lambda_coeff = lambda_coeff
-         
-         
+
+
 @implementer(IRegularization)
 class L1Regularization(BaseRegularization):
     MAPPING = "l1"

@@ -8,7 +8,7 @@ import numpy
 import time
 
 from loss_function import LossFunctionsRegistry
-from regularisation_functions import RegularizationRegistry
+from regularization_functions import RegularizationRegistry
 from svm import ModelsRegistry
 
 
